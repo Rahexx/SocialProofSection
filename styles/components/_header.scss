@@ -1,0 +1,50 @@
+.header {
+  width: 327px;
+  margin: 0 auto $space-49;
+  padding: $space-82 0 0;
+
+  &__title {
+    color: $magenta-very-dark;
+    text-align: center;
+    font-size: $font-size-40;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-32;
+  }
+
+  &__text {
+    margin: $space-17 0 $space-39;
+    text-align: center;
+    line-height: $line-height-25;
+    color: $magenta-grayish-dark;
+    font-size: $font-size-18;
+    font-weight: $font-weight-medium;
+  }
+
+  .ratings {
+    display: flex;
+    flex-direction: column;
+    gap: $space-16;
+  }
+}
+
+.rates {
+  height: 78px;
+  width: 327px;
+  padding: $space-16 0 $space-15;
+  background: $magenta-grayish-light;
+  border-radius: 8px;
+
+  &__result {
+    display: flex;
+    gap: $space-8;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-top: $space-15;
+    text-align: center;
+    color: $magenta-very-dark;
+    font-size: $font-size-16;
+    font-weight: $font-weight-bold;
+  }
+}

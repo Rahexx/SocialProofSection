@@ -1,2 +1,10 @@
 @import './styles/base/reset';
 @import './styles/utilities/variables';
+@import './styles/components/decorators';
+@import './styles/components/header';
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  font-family: $font-primary;
+}
