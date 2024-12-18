@@ -1,12 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 $font-primary: 'League Spartan', serif;
+
 $font-weight-light: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
+
+$font-size-16: 1rem;
+$font-size-18: 1.125rem;
+$font-size-20: 1.25rem;
+$font-size-40: 2.5rem;
+
+$line-height-25: 25px;
+$line-height-32: 32px;
 
 $soft-pink: hsl(333, 80%, 67%);
 $magenta-very-dark: hsl(300, 43%, 22%);
 $magenta-grayish-dark: hsl(303, 10%, 53%);
 $magenta-grayish-light: hsl(300, 24%, 96%);
 $white: hsl(0, 0%, 100%);
+
+$space-8: 8px;
+$space-15: 15px;
+$space-16: 16px;
+$space-17: 17px;
+$space-39: 39px;
+$space-49: 49px;
+$space-82: 82px;
