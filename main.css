@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container__decoration--top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.container__decoration--bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  height: 673px;
+  width: 1085px;
+  z-index: -1;
+}
+
+.header {
+  width: 327px;
+  margin: 0 auto 49px;
+  padding: 82px 0 0;
+}
+.header__title {
+  color: hsl(300, 43%, 22%);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 32px;
+}
+.header__text {
+  margin: 17px 0 39px;
+  text-align: center;
+  line-height: 25px;
+  color: hsl(303, 10%, 53%);
+  font-size: 17px;
+  font-weight: 500;
+}
+.header .ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rates {
+  height: 78px;
+  width: 327px;
+  padding: 16px 0 15px;
+  background: hsl(300, 24%, 96%);
+  border-radius: 8px;
+}
+.rates__result {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.rates__title {
+  margin-top: 15px;
+  text-align: center;
+  color: hsl(300, 43%, 22%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .header {
+    display: flex;
+    gap: 125px;
+    min-width: 900px;
+    margin: 0 auto 71px;
+    padding-top: 118px;
+  }
+  .header__content {
+    width: 445px;
+  }
+  .header__title {
+    text-align: start;
+    font-size: 3.5rem;
+    line-height: 48px;
+  }
+  .header__text {
+    margin: 16px 0 0;
+    text-align: start;
+    font-size: 19px;
+    letter-spacing: -0.63px;
+  }
+  .header .ratings {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .rates:nth-child(3) {
+    margin-left: 48px;
+  }
+  .rates:nth-child(4) {
+    margin-left: 95px;
+  }
+}
+@media (min-width: 1400px) {
+  .header {
+    height: 432px;
+    width: 1100px;
+  }
+  .ratings {
+    height: 200px;
+    width: 540px;
+  }
+  .rates {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    height: 56px;
+    width: 445px;
+    padding: 20px 32px;
+  }
+  .rates__result {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+  .rates__title {
+    margin-top: 0;
+    width: 220px;
+    text-align: start;
+    font-size: 17px;
+  }
+}
+.opinions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto;
+  padding-bottom: 99px;
+  width: 327px;
+}
+.opinions__card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  padding: 40px 32px 35px;
+  background: hsl(300, 43%, 22%);
+  border-radius: 8px;
+}
+.opinions__user {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.opinions__avatar {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.opinions__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.opinions__name {
+  color: hsl(0, 0%, 100%);
+  font-size: 17px;
+  font-weight: 700;
+}
+.opinions__verified {
+  color: hsl(333, 80%, 67%);
+  font-size: 17px;
+  font-weight: 400;
+}
+.opinions__text {
+  color: hsl(0, 0%, 100%);
+  line-height: 22px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  .opinions {
+    flex-direction: row;
+    height: 300px;
+    min-width: 900px;
+    padding-bottom: 0;
+  }
+  .opinions__card {
+    gap: 31px;
+  }
+  .opinions__card:nth-child(1) {
+    align-self: start;
+  }
+  .opinions__card:nth-child(2) {
+    align-self: center;
+  }
+  .opinions__card:nth-child(3) {
+    align-self: end;
+  }
+}
+@media (min-width: 1400px) {
+  .opinions {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 266px;
+    width: 1100px;
+    padding-bottom: 0;
+  }
+  .opinions__card {
+    height: 234px;
+    width: 350px;
+  }
+  .opinions__text {
+    letter-spacing: -0.3px;
+  }
+}
+.container {
+  position: relative;
+  min-height: 100vh;
+  font-family: "League Spartan", serif;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,100 @@
+.opinions {
+  display: flex;
+  flex-direction: column;
+  gap: $space-16;
+  margin: 0 auto;
+  padding-bottom: $space-99;
+  width: 327px;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: $space-24;
+    width: 100%;
+    padding: $space-40 $space-32 $space-35;
+    background: $magenta-very-dark;
+    border-radius: 8px;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: $space-24;
+  }
+
+  &__avatar {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: $space-4;
+  }
+
+  &__name {
+    color: $white;
+    font-size: $font-size-17;
+    font-weight: $font-weight-bold;
+  }
+
+  &__verified {
+    color: $soft-pink;
+    font-size: $font-size-17;
+    font-weight: $font-weight-light;
+  }
+
+  &__text {
+    color: $white;
+    line-height: $line-height-22;
+    font-size: $font-size-17;
+    font-weight: $font-weight-medium;
+  }
+}
+
+@media (min-width: $breakpoint-1200) {
+  .opinions {
+    flex-direction: row;
+    height: 300px;
+    min-width: 900px;
+    padding-bottom: 0;
+
+    &__card {
+      gap: $space-31;
+
+      &:nth-child(1) {
+        align-self: start;
+      }
+
+      &:nth-child(2) {
+        align-self: center;
+      }
+
+      &:nth-child(3) {
+        align-self: end;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-1400) {
+  .opinions {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 266px;
+    width: 1100px;
+    padding-bottom: 0;
+
+    &__card {
+      height: 234px;
+      width: 350px;
+    }
+
+    &__text {
+      letter-spacing: -0.3px;
+    }
+  }
+}

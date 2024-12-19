@@ -1,0 +1,18 @@
+.container {
+  &__decoration--top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__decoration--bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    height: 673px;
+    width: 1085px;
+    z-index: -1;
+  }
+}

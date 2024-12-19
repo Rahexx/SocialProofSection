@@ -1,0 +1,125 @@
+.header {
+  width: 327px;
+  margin: 0 auto $space-49;
+  padding: $space-82 0 0;
+
+  &__title {
+    color: $magenta-very-dark;
+    text-align: center;
+    font-size: $font-size-40;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-32;
+  }
+
+  &__text {
+    margin: $space-17 0 $space-39;
+    text-align: center;
+    line-height: $line-height-25;
+    color: $magenta-grayish-dark;
+    font-size: $font-size-17;
+    font-weight: $font-weight-medium;
+  }
+
+  .ratings {
+    display: flex;
+    flex-direction: column;
+    gap: $space-16;
+  }
+}
+
+.rates {
+  height: 78px;
+  width: 327px;
+  padding: $space-16 0 $space-15;
+  background: $magenta-grayish-light;
+  border-radius: 8px;
+
+  &__result {
+    display: flex;
+    gap: $space-8;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-top: $space-15;
+    text-align: center;
+    color: $magenta-very-dark;
+    font-size: $font-size-16;
+    font-weight: $font-weight-bold;
+  }
+}
+
+@media (min-width: $breakpoint-1200) {
+  .header {
+    display: flex;
+    gap: $space-125;
+    min-width: 900px;
+    margin: 0 auto $space-71;
+    padding-top: $space-118;
+
+    &__content {
+      width: 445px;
+    }
+    &__title {
+      text-align: start;
+      font-size: $font-size-56;
+      line-height: $line-height-48;
+    }
+
+    &__text {
+      margin: $space-16 0 0;
+      text-align: start;
+      font-size: $font-size-19;
+      letter-spacing: -0.63px;
+    }
+
+    .ratings {
+      display: flex;
+      flex-direction: column;
+      gap: $space-16;
+    }
+  }
+
+  .rates {
+    &:nth-child(3) {
+      margin-left: $space-48;
+    }
+
+    &:nth-child(4) {
+      margin-left: $space-95;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-1400) {
+  .header {
+    height: 432px;
+    width: 1100px;
+  }
+  .ratings {
+    height: 200px;
+    width: 540px;
+  }
+
+  .rates {
+    display: flex;
+    align-items: center;
+    gap: $space-32;
+    height: 56px;
+    width: 445px;
+    padding: $space-20 $space-32;
+
+    &__result {
+      display: flex;
+      gap: $space-8;
+      justify-content: center;
+    }
+
+    &__title {
+      margin-top: 0;
+      width: 220px;
+      text-align: start;
+      font-size: $font-size-17;
+    }
+  }
+}
